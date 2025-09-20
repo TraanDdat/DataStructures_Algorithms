@@ -1,0 +1,10 @@
+* Hashing is fastest searching technique
+
+* Two types of Hashing:
+    1) Open Hashing
+        - Chaining
+    2) Closed Hashing
+        - Open Addressing
+            + Linear Probing
+            + Quadratic Probing
+            + Double Hashing

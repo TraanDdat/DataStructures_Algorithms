@@ -1,0 +1,21 @@
+* Binary Search Tree - Properties
+    1) No duplicates
+    2) In order gives sorted order
+    3) Number of BST for n Nodes
+    Note: Almost using "Linked List" representation
+
+    * Number of Binary Trees:
+    - Catalan Number: 
+                2.n
+                    Cn
+        T(n) =  ------
+                n + 1
+    Ex:
+                2*5         10*9*8*7*6
+                    C5      ----------
+        T(5) =  ------ =    5*4*3*2*1   = 3 * 2 *7   OR T(5) = [from i = 1 to n] T(i-1)*T(n-i)
+                5 + 1       ----------
+                                6
+
+* Maximum number of searching: height
+    logn < height < n

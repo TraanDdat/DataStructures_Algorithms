@@ -1,0 +1,44 @@
+* Time Complexity
+    - A[n]={} --> n elements --> Number of elements
+        - for(int i = 0; i < n; i++) --> O(n) - Time Complexity
+        - for(int i = 0; i < n; i++)
+        for(int j = 0; j < n; j++) --> O(n*n) - Time Complexity
+        - for(int i = 0; i < n; i++)
+        for(int j = i + 1; j < n; j++) --> (((n*n) - n) / 2) --> O(n*n) - Time Complexity
+        - for(i = n; i > 1; i = i / 2) --> O(log2(n)) - Time Complexity
+    - Matrix: 
+        - O(1) → single element access
+        - O(n) → row/column/diagonal
+        - O(n²) → full matrix traversal
+        - O(n³) → multiplication
+
+    Definition:
+    Measures how the running time of an algorithm grows with the size of the input (n).
+    It tells you "how fast" the algorithm’s execution time increases as the problem size increases.
+
+    Common notations (Big-O):
+    Notation	Name	            Example use case
+    O(1)	    Constant time       Access array element
+    O(log n)	Logarithmic time	Binary search
+    O(n)	    Linear time	        Loop through array
+    O(n log n)	Linearithmic time	Merge sort, quicksort (average)
+    O(n²)	    Quadratic time	    Nested loops over n
+    O(n³)	    Cubic time	        Matrix multiplication
+    O(2ⁿ)	    Exponential time	Solving subset problems (brute force)
+    O(n!)	    Factorial time	    Generating all permutations
+
+* Space Complexity - How much space is consumed in memory
+    - A[n] = {} --> O(n) - Space Complexity
+    Definition:
+    Measures how much extra memory (RAM) an algorithm needs relative to the input size.
+    
+    Components:
+    Fixed part → memory for constants, program code, and fixed-size variables.
+    
+    Variable part → memory for dynamically allocated structures, recursion stack, etc.
+    
+    Common notations:
+    Notation	Meaning
+    O(1)	Constant extra space (in-place algorithm)
+    O(n)	Memory grows linearly with input size
+    O(n²)	Memory grows quadratically

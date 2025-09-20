@@ -1,0 +1,32 @@
+Ex:
+    A[] = {8,5,7,3,2} (n = 5)
+        - 1st Pass
+            8 5 7 3 2
+            2 8 5 7 3
+            -> 4 Comparisons
+            -> 1 Swap
+        - 2nd Pass
+            2 8 5 7 3
+            2 3 8 5 7
+            -> 3 Comparisons
+            -> 1 Swap
+        - 3rd Pass
+            2 3 8 5 7
+            2 3 5 8 7
+            -> 2 Comparisons
+            -> 1 Swap
+        - 4th Pass
+            2 3 5 8 7
+            2 3 5 7 8
+            -> 1 Comparison
+            -> 1 Swap
+
+* Number of Pass: (n-1)
+* Number of Comparisons: (n*(n-1))/2
+* Minimum Number of Comparisons: n - 1
+* Max Number of Swaps: (n-1)
+* Maximum Time Complexity: O(n^2)
+
+Note:   The Selection Sort is NOT Stable and NOT Adaptive.
+        In Selection Sort, we select the position and find out an element for that position.
+        

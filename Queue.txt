@@ -1,0 +1,20 @@
+* Queue ADT -> FIFO
+    * Data:
+        - Space for storing elements.
+        - Front for Deletion.
+        - Rear for Insertion.
+    * Operations:
+        - Enqueue();
+        - Dequeue();
+        - IsEmpty();
+        - IsFull();
+        - First();
+        - Last();
+
+* Note: Queue can be implemented using two physical data structures ( "Array" && "Linked List").
+
+* Queue using single pointer --> Enqueue() --> O(1);
+                                 Dequeue() --> O(n);
+
+* Queue using single pointer --> Enqueue() --> O(1);
+                                 Dequeue() --> O(1);

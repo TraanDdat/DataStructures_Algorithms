@@ -1,0 +1,28 @@
+* Criteria for Analysis
+    1) Number of comparisons    -> Decide the Time Complexity only
+    2) Number of swaps          -> 
+    3) Adaptive                 -> what happen if already sorted list
+    4) Stable                   -> If the sorting algorithm is preserving the order of a duplicate elements in the sorted list.
+    5) Extra Memory             -> Whether it require extra memory or not
+
+* The list of Sorting Techniques
+    - Comparison based sorts:
+        1) Bubble           
+        2) Insertion         
+        3) Selection
+        --> O(n^2)
+
+        4) Heap Sorting
+        5) Merge Sorting
+        6) Quick Sorting
+        7) Tree Sorting
+        --> O(nlogn)
+
+        8) Shell Sorting
+        --> O(n^(3/2))
+        
+    - Index based sorts:
+        9) Count Sorting
+        10) Bucket/Bin Sorting
+        11) Radix Sorting
+        --> O(n)

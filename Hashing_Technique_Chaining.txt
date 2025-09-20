@@ -1,0 +1,11 @@
+1) Insert
+2) Search
+3) Analysis
+4) Delete
+
+* The Number of keys: n
+* The size of hash table: size
+* The "Loading Factor1": Lamda = n/size ( Very important in Hashing)
+
+* Avg successful search time: t = 1 + Lamda/2 (1 for Hash Function, Lamda/2 for Avg Hash Comparisons)
+* Avg unsuccessful search time: t = 1 + Lamda (1 for Hash Function, Lamda for Hash Comparisons)

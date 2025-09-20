@@ -1,0 +1,36 @@
+Ex:
+    A[] = {8,5,7,3,2} (n = 5)
+        - 1st Pass
+            8 5 7 3 2
+            5 8 7 3 2
+            5 7 8 3 2
+            5 7 3 8 2
+            5 7 3 2 8
+            -> 4 Comparisons
+            -> 4 Swaps
+        - 2nd Pass
+            5 7 3 2 8
+            5 7 3 2 8
+            5 3 7 2 8
+            5 3 2 7 8
+            -> 3 Comparisons
+            -> 3 Swaps
+        - 3rd Pass
+            5 3 2 7 8
+            3 5 2 7 8
+            3 2 5 7 8
+            -> 2 Comparisons
+            -> 2 Swaps
+        - 4th Pass
+            3 2 5 7 8
+            2 3 5 7 8
+            -> 1 Comparison
+            -> 1 Swaps
+* Number of Pass: (n-1)
+* Number of Comparisons: (n*(n-1))/2
+* Max Number of Swaps: (n*(n-1))/2
+* Minimum Time Complexity: O(n) ( The list is already sorted)
+* Maximum Time Complexity: O(n^2)
+
+Note:   The Bubble Sort is useful for "Array".
+        The Bubble Sort is Stable and Adaptive.

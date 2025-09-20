@@ -1,0 +1,11 @@
+* ADT Stack
+    1) Data:
+        - Space for storing elements
+        - Top pointer
+    2) Operations:
+        - push(x)
+        - pop()
+        - peek(index)
+        - stacktop()
+        - isEmpty()
+        - isFull()

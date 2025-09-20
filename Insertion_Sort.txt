@@ -1,0 +1,39 @@
+Ex:
+    A[] = {8,5,7,3,2} (n = 5) -> Linked List: 8 | 5 | 7 | 3 | 2
+        - 1st Pass
+            8 | 5 | 7 | 3 | 2
+            5 | 8 | 7 | 3 | 2
+            -> 1 Comparison ( 5 vs 8 )
+            -> 1 Swap ( 5 vs 8)
+        - 2nd Pass
+            5 | 8 | 7 | 3 | 2
+            5 | 7 | 8 | 3 | 2
+            -> 2 Comparisons ( 7 vs 8 ) and ( 7 vs 5 ) 
+            -> 2 Swaps ( 7 vs 8 ) and ( 5 )
+        - 3rd Pass
+            5 | 7 | 8 | 3 | 2
+            5 | 7 | 3 | 8 | 2
+            5 | 3 | 7 | 8 | 2
+            3 | 5 | 7 | 8 | 2
+            -> 3 Comparisons ( 3 vs 8 ) and ( 3 vs 7 ) and ( 3 vs 5 )
+            -> 3 Swaps ( 3 vs 8 ) and ( 3 vs 7 ) and ( 3 vs 5 )
+        - 4th Pass
+            3 | 5 | 7 | 8 | 2
+            3 | 5 | 7 | 2 | 8
+            3 | 5 | 2 | 7 | 8
+            3 | 2 | 5 | 7 | 8
+            2 | 3 | 5 | 7 | 8
+            -> 4 Comparisons ( 2 vs 8 ) and ( 2 vs 7 ) and ( 2 vs 5 ) and ( 2 vs 3 )
+            -> 4 Swaps ( 2 vs 8 ) and ( 2 vs 7 ) and ( 2 vs 5 ) and ( 2 vs 3 )
+
+* Number of Pass: (n-1)
+* Number of Comparisons: (n*(n-1))/2
+* Minimum Number of Comparisons: n - 1
+* Max Number of Swaps: (n*(n-1))/2
+* Minimum Number of Swaps: 0
+* Maximum Time Complexity: O(n^2)
+* Minimum Time Complexity: O(n)
+
+Note:   The Insertion Sort is useful for "Linked List" than "Array" due to not need shifting elements in "Linked List".
+        The Insertion Sort is Stable and Adaptive.
+

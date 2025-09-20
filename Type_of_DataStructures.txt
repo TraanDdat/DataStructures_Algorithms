@@ -1,0 +1,18 @@
+* Physical: Refer to "How data is actually stored in memory". It's about the "organization" and "arrangement" of data in memory.
+    - Array --> Store in "stack" memory
+        + Pros: Fast access by index (O(1))
+        + Cons: Fixed size, costly inserts/deletions in the middle
+    - Linked List --> Store in "heap" memory
+        + Pros: Dynamic size, easily insert/delete
+        + Cons: Slower access (O(n) for searching)
+
+* Logical: 
+    - Linear:
+        - Stack --> LiFo
+        - Queues --> FiFo
+    - Non-Linear
+        - Tree 
+        - Graph
+    - Tabular
+        - Hash Table
+    

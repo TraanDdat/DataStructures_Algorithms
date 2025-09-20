@@ -1,0 +1,53 @@
+Ex:
+void func(int n)
+{
+    if(n>0)
+    {
+        printf("%d",n);
+        func(n-1);
+    }
+}
+
+void main()
+{
+    int x = 3;
+    func(x);
+}
+
+* Time Complexity:
+        func(3)                 
+        /   \
+        3   func(2)             --> 1
+            /   \
+            2   func(1)         --> 1
+                /   \
+                1   func(0)     --> 1
+                        |
+                        break 
+                                --> Statements: 1 + 1 +1 = 3 = n --> Time Complexity = O(n)
+* Recurrence Relation:
+
+EX:
+
+void func(int n)            --> T(n)
+{
+    if(n>0)                 
+    {
+        printf("%d",n);     --> 1
+        func(n-1);          --> T(n-1)
+    }
+}
+
+         = T(n-1) + 1 when n > 0
+--> T(n) |
+         = 1 when n = 0
+
+General:
+T(n) = T(n-1) + 1 --> (1) <T(n-1) = T(n-2) + 1>
+T(n) = T(n-2) + 1 + 1 = T(n-2) + 2 (2)
+T(n) = T(n-3) + 1 + 2 = T(n-3) + 3 (3)
+...
+T(n) = T(n-k) + 1 + k - 1 = T(n-k) + k (k)
+
+Assume: n - k = 0 --> n = k
+        --> T(n) = T(n-n) + n = T(0) + n = 1 + n --> Time Complexity O(n)

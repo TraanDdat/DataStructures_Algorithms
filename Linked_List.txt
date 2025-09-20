@@ -1,0 +1,27 @@
+* Why we need "Linked List"
+    1) Problem with Arrays --> Fixed size
+    2) Difference between Array and Linked List
+        - Array: Fixed Size
+        - Linked List: Dynamic Size
+* What is "Linked List"
+    - A Linked List is a linear data structure where elements (called nodes) are stored in separate memory locations and connected using pointers.
+    - Unlike arrays, the elements are not stored in contiguous memory — each node contains:
+        Data → the actual value
+        Pointer → address of the next node in the sequence
+
+* Advantages
+    - Dynamic size → can grow/shrink at runtime.
+    - Efficient insertion/deletion anywhere in the list (no shifting like arrays).
+* Disadvantages
+    - Extra memory for storing pointers.
+    - No direct access to elements (must traverse from the head).
+    - Cache-unfriendly (non-contiguous memory).
+
+Ex:
+    Node: [data|next]
+C++:
+    struct Node
+    {
+        int data;           // sizeof(int)
+        struct Node *next; // Self-Referential - sizeof(pointer)
+    }

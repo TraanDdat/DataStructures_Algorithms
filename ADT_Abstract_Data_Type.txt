@@ -1,0 +1,35 @@
+* Definition:
+    - An "Abstract Data Type - ADT" is a concept in computer science that defines a "data model" purely in terms of its behavior (what operations it can perform) rather than how it implemented.
+    - Think of it as a contract. It specifies what you can do with the data, not how it is done behind the scenes.
+* Key Points
+    1) Abstract → hides the implementation details.
+    2) Data Type → specifies the kind of data and the valid operations on it.
+    3) Defined by:
+        - Operations (what you can do: insert, delete, search…)
+        -Rules or constraints (e.g., in a stack, you can only access the top element)
+    
+    4) Implementation is separate from the definition — the same ADT can be implemented in many ways (e.g., array or linked list).
+Example
+Stack ADT
+Description: A collection of elements that follows the Last-In-First-Out (LIFO) principle.
+
+Operations:
+
+push(item) – add an element on top.
+
+pop() – remove the top element.
+
+peek() – look at the top element without removing it.
+
+Constraints: You can only access the top element.
+
+Possible Implementations:
+
+Using an array.
+
+Using a linked list.
+
+* Why ADT is important
+    - Encourages modularity: you can change the implementation without changing the code that uses the ADT.
+    - Improves code reusability and maintainability.
+    - Makes algorithms easier to reason about because you focus on what rather than how.

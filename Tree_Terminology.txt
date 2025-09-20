@@ -1,0 +1,136 @@
+*Tree Terminology in Data Structures
+
+- Tree
+
+A hierarchical data structure consisting of nodes connected by edges, with one designated root.
+
+- Node
+
+The fundamental unit of a tree, stores data and possibly links to child nodes.
+
+- Root
+
+The topmost node of the tree.
+
+A tree has exactly one root (unless empty).
+
+- Edge
+
+A connection between a parent and a child node.
+
+- Parent
+
+A node that has one or more children.
+
+-Child
+
+A node that descends from a parent.
+
+- Sibling
+
+Nodes that share the same parent.
+
+- Leaf (External Node)
+
+A node with no children.
+
+- Internal Node
+
+Any node that is not a leaf (has at least one child).
+
+- Ancestor
+
+Any node on the path from the root to a given node.
+
+- Descendant
+
+A node that lies below another node in the hierarchy.
+
+- Path
+
+A sequence of nodes connected by edges.
+
+- Level (Depth)
+
+Distance from the root to the node (root = level 0).
+
+- Height of Node
+
+Longest path (in edges) from the node to a leaf.
+
+- Height of Tree
+
+Height of the root node (longest root-to-leaf path).
+
+- Depth of Node
+
+Number of edges from the root to that node.
+
+- Degree of Node
+
+Number of children of a node.
+
+- Degree of Tree
+
+The maximum degree of any node in the tree.
+
+- Subtree
+
+A tree formed from any node and its descendants.
+
+- Binary Tree
+
+A tree where each node has at most 2 children (left, right).
+
+- Full Binary Tree
+
+Every node has either 0 or 2 children.
+
+- Complete Binary Tree
+
+All levels are completely filled except possibly the last, which is filled from left to right.
+
+- Perfect Binary Tree
+
+All internal nodes have 2 children and all leaves are at the same level.
+
+- Balanced Tree
+
+A tree where the height difference between left and right subtrees of every node is bounded (e.g., AVL Tree).
+
+- Forest
+
+A collection of disjoint trees.
+
+* Example Tree
+        A (root)
+       / \
+      B   C
+     / \    \
+    D   E    F
+   / \
+  G   H
+
+Root: A
+
+Parent of B: A
+
+Children of B: D, E
+
+Siblings: B and C
+
+Descendants of B: D, E, G, H 
+
+Leaf nodes: D, E, F
+
+Internal nodes: A, B, C
+
+External nodes: G, H, E, F
+
+Ancestors: Path from A to E: A → B → E
+
+Height of tree: 3
+
+Depth( Level ) of E: 2
+
+Degree of B: 2

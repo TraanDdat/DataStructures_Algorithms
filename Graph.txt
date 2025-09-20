@@ -1,0 +1,32 @@
+G = (v,e) <v: vertex; e: edge>
+https://www.geeksforgeeks.org/dsa/graph-types-and-applications/
+
+1. Based on Edge Direction:
+* Undirected Graph:
+    Edges have no direction, meaning the relationship between two vertices is bidirectional. If there's an edge from A to B, there's also an implied edge from B to A.
+* Directed Graph (Digraph):
+    Edges have a specific direction, indicating a one-way relationship between vertices. An edge from A to B does not necessarily imply an edge from B to A. 
+2. Based on Edge Weights:
+* Unweighted Graph:
+    Edges do not have any associated values or costs. All edges are considered equal.
+* Weighted Graph:
+    Edges have numerical values (weights or costs) associated with them, representing attributes like distance, time, or cost.
+3. Based on Cycles:
+* Cyclic Graph: Contains at least one cycle, which is a path that starts and ends at the same vertex without repeating edges or intermediate vertices.
+* Acyclic Graph: Does not contain any cycles.
+* Directed Acyclic Graph (DAG): A special type of directed graph that does not contain any directed cycles. 
+4. Based on Connectivity:
+* Connected Graph: Every vertex is reachable from every other vertex.
+* Disconnected Graph: Contains at least one vertex that is not reachable from another vertex. It can be thought of as a collection of connected components. 
+5. Based on Structure/Properties:
+* Complete Graph: A simple graph where every pair of distinct vertices is connected by a unique edge.
+* Bipartite Graph: Vertices can be divided into two disjoint sets such that edges only connect vertices from different sets, not within the same set.
+* Null Graph: Contains only vertices and no edges.
+* Trivial Graph: Contains only a single vertex and no edges.
+* Simple Graph: Contains no loops (edges connecting a vertex to itself) and no multiple edges between the same pair of vertices.
+* Multigraph: Allows multiple edges between the same pair of vertices.
+* Tree: A connected acyclic graph. It is a special type of graph with specific properties.
+* Forest: A disjoint collection of trees.
+* Sparse Graph: A graph with a relatively small number of edges compared to the maximum possible edges.
+* Dense Graph: A graph with a relatively large number of edges compared to the maximum possible edges.
+
