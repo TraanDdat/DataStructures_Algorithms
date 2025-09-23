@@ -87,8 +87,5 @@ if __name__ == "__main__":
     trie.insert("Dat")
     collect_words = trie.collect_words()
     print(type(collect_words))
-    #print(dictionary)
-    #print(word_break("helloDatpython", collect_words))
-
-
-
+    print(dictionary)
+    print(word_break("helloDatpython", collect_words))
